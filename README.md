@@ -3,7 +3,7 @@ Dream Homes is a simple real estate website designed to showcase luxury properti
 The platform features premium homes, provides company information, and allows users to explore their perfect homes and submit their preferences.
 
 
-   Features
+   FEATURES
 - Navigation bar with key sections
    (Home, Location, Design, Services, Contact, About)
 - Property gallery showcasing luxury homes
@@ -12,7 +12,7 @@ The platform features premium homes, provides company information, and allows us
 - (style.css)to style
 
   
-   Sections Breakdown
+   SECTION FEATURES
 -Header & Navigation
 - Logo: Dream Homes
 - Menu links for easy navigation
@@ -22,23 +22,23 @@ The platform features premium homes, provides company information, and allows us
 - Call-to-action button (Join Us)
 
 
-    Property Gallery
+    PROPERTY GALLERY
 - Westlands Mansion – 5-bedroom luxury home with pool
 - Karen Estate – 6-bedroom villa with garden
 
 
-    Form Section
+    FORM SECTION
   - Collects:
   - Email
   - Password
   - Desired location
 
 
-    Technologies Used
+    TECHNOLOGIES USED
 - HTML5
 - css
 
 
-     Author
+     AUTHOR
   hiel kipkirui
 Dream Homes Project – 2026
