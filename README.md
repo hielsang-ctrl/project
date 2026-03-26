@@ -1,6 +1,6 @@
    DREAM HOMES – Real Estate Website
 Dream Homes is a simple real estate website designed to showcase luxury properties in Nairobi. 
-The platform shows premium homes, provides company information, and allows users to explore their perfect homesand submit their preferences.
+The platform shows premium homes, provides company information, and allows users to explore their perfect homes and submit their preferences.
 
    Features
 - Navigation bar with key sections
