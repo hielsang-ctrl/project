@@ -3,7 +3,8 @@ Dream Homes is a simple real estate website designed to showcase luxury properti
 The platform shows premium homes, provides company information, and allows users to explore their perfect homesand submit their preferences.
 
    Features
-- Navigation bar with key sections (Home, Location, Design, Services, Contact, About)
+- Navigation bar with key sections
+   (Home, Location, Design, Services, Contact, About)
 - Property gallery showcasing luxury homes
 - introducing the business
 - User form for collecting client preferences (email, password, location)
