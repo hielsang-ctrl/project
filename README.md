@@ -29,8 +29,8 @@ The platform features premium homes, provides company information, and allows us
 
     Form Section
   - Collects:
- - Email
-- Password
+  - Email
+ - Password
 - Desired location
 
 
