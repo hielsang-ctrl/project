@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - DREAM HOMES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">DREAM HOMES</h2>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="location.html">LOCATION</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="location" class="location-section">
+                <h2>Locations Around Nairobi</h2>
+                <p>Explore our properties in prime locations across Nairobi. Click on the markers to learn more about each area.</p>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([-1.2864, 36.8172], 11); // Nairobi coordinates
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add markers for different locations
+        var locations = [
+            { name: 'Westlands', lat: -1.2630, lng: 36.8065, desc: 'Modern urban area with shopping malls and entertainment.' },
+            { name: 'Karen', lat: -1.3167, lng: 36.7000, desc: 'Upscale residential area with golf courses and wildlife.' },
+            { name: 'Kilimani', lat: -1.3074, lng: 36.7883, desc: 'Vibrant neighborhood with cafes and cultural spots.' },
+            { name: 'Langata', lat: -1.3667, lng: 36.7333, desc: 'Known for its proximity to national parks and museums.' },
+            { name: 'Nairobi CBD', lat: -1.2864, lng: 36.8172, desc: 'The bustling central business district.' }
+        ];
+
+        locations.forEach(function(location) {
+            L.marker([location.lat, location.lng])
+                .addTo(map)
+                .bindPopup('<b>' + location.name + '</b><br>' + location.desc);
+        });
+    </script>
+</body>
+</html></content>
+<parameter name="filePath">/home/hiel-sang/PROJECT/location.html

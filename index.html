@@ -14,11 +14,8 @@
                 <div class="menu">
                     <ul>
                         <li><a href="#home-gallery">HOME</a></li> 
-                        <li><a href="#">LOCATION</a></li>
-                        <li><a href="#">DESIGN</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">CONTACT</a></li> 
-                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="location.html" target="_blank">LOCATION</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
 
@@ -58,6 +55,12 @@
                 <p>Welcome to Dream Homes Nairobi, your trusted partner in real estate since 2015. We specialize in buying, selling, and renting properties across Nairobi's most desirable neighborhoods including Westlands, Karen, Kilimani, and Langata. Our expert team helps families and investors find the perfect home that matches their lifestyle and budget. With a comprehensive portfolio of residential and commercial properties, we're committed to making your property dreams a reality.</p>
               </div>
 
+              <div id="contact" class="contact-section">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for all your real estate needs.</p>
+                <p><strong>Email:</strong> <a href="mailto:hielckjr@gmail.com">hielckjr@gmail.com</a></p>
+              </div>
+
               <form action="#" method="post">
                    <label>
                         Email
@@ -84,6 +87,30 @@
          </div>
     </div>
 
-</body>
-</html>
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([-1.2864, 36.8172], 11); // Nairobi coordinates
 
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add markers for different locations
+        var locations = [
+            { name: 'Westlands', lat: -1.2630, lng: 36.8065, desc: 'Modern urban area with shopping malls and entertainment.' },
+            { name: 'Karen', lat: -1.3167, lng: 36.7000, desc: 'Upscale residential area with golf courses and wildlife.' },
+            { name: 'Kilimani', lat: -1.3074, lng: 36.7883, desc: 'Vibrant neighborhood with cafes and cultural spots.' },
+            { name: 'Langata', lat: -1.3667, lng: 36.7333, desc: 'Known for its proximity to national parks and museums.' },
+            { name: 'Nairobi CBD', lat: -1.2864, lng: 36.8172, desc: 'The bustling central business district.' }
+        ];
+
+        locations.forEach(function(location) {
+            L.marker([location.lat, location.lng])
+                .addTo(map)
+                .bindPopup('<b>' + location.name + '</b><br>' + location.desc);
+        });
+    </script>
+
+ </body>
+ </html>
